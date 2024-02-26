@@ -139,11 +139,11 @@ function runProgram() {
 
   let score = 0;
 
-  if (userAlgorithm === 1) {
+  if (userAlgorithm === '1') {
     score = simpleScorer(userWord);
-  } else if (userAlgorithm === 2) {
+  } else if (userAlgorithm === '2') {
     score = vowelBonusScorer(userWord);
-  } else if (userAlgorithm === 3) {
+  } else if (userAlgorithm === '3') {
     score = scrabbleScorer(userWord);
   } else {
     console.log('Sorry, invalid choice. Try Again.');
